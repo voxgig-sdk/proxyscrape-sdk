@@ -1,0 +1,42 @@
+{
+  "existing": {
+    "proxy_list": {
+      "PROXY_LIST00": {
+        "anonymity": "s3c",
+        "country": "s3d",
+        "ip": "s3e",
+        "port": "s3f",
+        "protocol": "s40",
+        "timeout": "s41"
+      },
+      "PROXY_LIST01": {
+        "anonymity": "s78",
+        "country": "s79",
+        "ip": "s7a",
+        "port": "s7b",
+        "protocol": "s7c",
+        "timeout": "s7d"
+      },
+      "PROXY_LIST02": {
+        "anonymity": "sb4",
+        "country": "sb5",
+        "ip": "sb6",
+        "port": "sb7",
+        "protocol": "sb8",
+        "timeout": "sb9"
+      }
+    }
+  },
+  "new": {
+    "proxy_list": {
+      "proxy_list_ref01": {
+        "anonymity": "sf0",
+        "country": "sf1",
+        "ip": "sf2",
+        "port": "sf3",
+        "protocol": "sf4",
+        "timeout": "sf5"
+      }
+    }
+  }
+}

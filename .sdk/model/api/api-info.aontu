@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/proxyscrape"
+      }
+      description: "The ProxyScrape API provides access to a global proxy server provider, delivering residential, dedicated, and shared datacenter proxies designed for performance. Users can retrieve lists of proxies by specifying requirements such as country and protocol type."
+      servers: [
+        {
+          description: "ProxyScrape API v3 Server"
+          url: "https://api.proxyscrape.com/v3"
+        }
+      ]
+      summary: "The ProxyScrape API provides access to a global proxy server provider, delivering residential, dedicated, and shared datacenter proxies designed for performance."
+      title: "ProxyScrape API"
+      version: "3.0.0"
+      website: "https://proxyscrape.com"
+    }
+  }
+}
+

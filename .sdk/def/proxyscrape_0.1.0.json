@@ -1,0 +1,222 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "ProxyScrape API",
+    "description": "The ProxyScrape API provides access to a global proxy server provider, delivering residential, dedicated, and shared datacenter proxies designed for performance. Users can retrieve lists of proxies by specifying requirements such as country and protocol type.",
+    "version": "3.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/proxyscrape"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.proxyscrape.com/v3",
+      "description": "ProxyScrape API v3 Server"
+    }
+  ],
+  "paths": {
+    "/free-proxy-list/get": {
+      "get": {
+        "summary": "Get Proxy List",
+        "description": "Retrieves a list of proxy servers based on specified filters such as country, protocol type, timeout, and anonymity level.",
+        "operationId": "getProxyList",
+        "parameters": [
+          {
+            "name": "request",
+            "in": "query",
+            "description": "Type of request to perform",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "displayproxies"
+              ],
+              "default": "displayproxies"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "description": "Country code for filtering proxies (e.g., 'us' for United States)",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "us"
+            }
+          },
+          {
+            "name": "protocol",
+            "in": "query",
+            "description": "Protocol type for the proxy servers",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "http",
+                "https",
+                "socks4",
+                "socks5"
+              ],
+              "example": "socks5"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Response format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json",
+                "text"
+              ],
+              "default": "json"
+            }
+          },
+          {
+            "name": "timeout",
+            "in": "query",
+            "description": "Maximum timeout for proxy servers in milliseconds",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "example": 6000
+            }
+          },
+          {
+            "name": "anonymity",
+            "in": "query",
+            "description": "Anonymity level of proxies (comma-separated for multiple levels)",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "elite,anonymous"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response containing a list of proxy servers",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "proxies": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "ip": {
+                            "type": "string",
+                            "description": "IP address of the proxy server",
+                            "example": "192.168.1.1"
+                          },
+                          "port": {
+                            "type": "integer",
+                            "description": "Port number of the proxy server",
+                            "example": 8080
+                          },
+                          "protocol": {
+                            "type": "string",
+                            "description": "Protocol type of the proxy",
+                            "example": "socks5"
+                          },
+                          "country": {
+                            "type": "string",
+                            "description": "Country code of the proxy location",
+                            "example": "US"
+                          },
+                          "anonymity": {
+                            "type": "string",
+                            "description": "Anonymity level of the proxy",
+                            "example": "elite"
+                          },
+                          "timeout": {
+                            "type": "integer",
+                            "description": "Timeout value in milliseconds",
+                            "example": 1500
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "proxies": [
+                    {
+                      "ip": "192.168.1.1",
+                      "port": 1080,
+                      "protocol": "socks5",
+                      "country": "US",
+                      "anonymity": "elite",
+                      "timeout": 1500
+                    },
+                    {
+                      "ip": "192.168.1.2",
+                      "port": 1080,
+                      "protocol": "socks5",
+                      "country": "US",
+                      "anonymity": "anonymous",
+                      "timeout": 2000
+                    }
+                  ]
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "description": "Plain text list of proxy servers",
+                  "example": "192.168.1.1:1080\n192.168.1.2:1080"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid parameters provided",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message describing what went wrong"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message describing the server issue"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Proxy List"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Proxy List",
+      "description": "Endpoints for retrieving proxy server lists"
+    }
+  ]
+}
