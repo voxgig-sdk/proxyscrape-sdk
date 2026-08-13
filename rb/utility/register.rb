@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ ProxyscrapeUtility.registrar = ->(u) {
   u.prepare_params = ProxyscrapeUtilities::PrepareParams
   u.prepare_path = ProxyscrapeUtilities::PreparePath
   u.prepare_query = ProxyscrapeUtilities::PrepareQuery
+  u.graphql_body = ProxyscrapeUtilities::GraphqlBody
+  u.graphql_errors = ProxyscrapeUtilities::GraphqlErrors
   u.result_basic = ProxyscrapeUtilities::ResultBasic
   u.result_body = ProxyscrapeUtilities::ResultBody
   u.result_headers = ProxyscrapeUtilities::ResultHeaders

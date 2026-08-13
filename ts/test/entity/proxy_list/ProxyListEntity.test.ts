@@ -63,7 +63,7 @@ describe('ProxyListEntity', async () => {
     const proxy_list_ref01_ent = client.ProxyList()
     const proxy_list_ref01_match: any = {}
 
-    const proxy_list_ref01_list = await proxy_list_ref01_ent.list(proxy_list_ref01_match)
+    const proxy_list_ref01_list = (await proxy_list_ref01_ent.list(proxy_list_ref01_match)).map((e: any) => e.data())
 
 
   })

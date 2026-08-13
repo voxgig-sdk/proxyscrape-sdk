@@ -8,6 +8,7 @@ guide: {
   entity: proxy_list: {
     path: "/free-proxy-list/get": {
       op: list: method: *GET
+      op: list: transform: res: *("`body.proxies`")|top
     }
   }
 

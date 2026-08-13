@@ -21,7 +21,7 @@ class Config {
 
 
   main = {
-    name: 'ProjectName',
+    name: 'Proxyscrape',
   }
 
 
@@ -163,6 +163,7 @@ class Config {
                   }
                 ]
               },
+              "kind": "http",
               "method": "GET",
               "orig": "/free-proxy-list/get",
               "parts": [
@@ -181,7 +182,7 @@ class Config {
               },
               "transform": {
                 "req": "`reqdata`",
-                "res": "`body`"
+                "res": "`body.proxies`"
               },
               "index$": 0
             }

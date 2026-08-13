@@ -37,7 +37,7 @@ class ProxyListEntity extends ProxyscrapeEntityBase<ProxyList> {
 
 
 
-  async list(this: any, reqmatch?: ProxyListListMatch, ctrl?: Control): Promise<ProxyList[]> {
+  async list(this: any, reqmatch?: ProxyListListMatch, ctrl?: Control): Promise<ProxyListEntity[]> {
 
     const utility = this._utility
 

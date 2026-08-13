@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import ProxyscrapeSDK
-from core.error import ProxyscrapeError
-from core.result import ProxyscrapeResult
-from core.response import ProxyscrapeResponse
-from core.spec import ProxyscrapeSpec
-from feature.base_feature import ProxyscrapeBaseFeature
+from projectname_sdk.core.error import ProxyscrapeError
+from projectname_sdk.core.result import ProxyscrapeResult
+from projectname_sdk.core.response import ProxyscrapeResponse
+from projectname_sdk.core.spec import ProxyscrapeSpec
+from projectname_sdk.feature.base_feature import ProxyscrapeBaseFeature
 
 
 def _client():

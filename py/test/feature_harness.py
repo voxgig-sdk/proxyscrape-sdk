@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import ProxyscrapeControl
-from core.error import ProxyscrapeError
-from core.result import ProxyscrapeResult
-from core.spec import ProxyscrapeSpec
+from proxyscrape_sdk.config import make_config
+from proxyscrape_sdk.features import _make_feature
+from proxyscrape_sdk.core.control import ProxyscrapeControl
+from proxyscrape_sdk.core.error import ProxyscrapeError
+from proxyscrape_sdk.core.result import ProxyscrapeResult
+from proxyscrape_sdk.core.spec import ProxyscrapeSpec
 
 
 # True when this SDK was generated with the named feature.

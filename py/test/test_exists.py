@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Proxyscrape SDK exists test
 
 import pytest
 from proxyscrape_sdk import ProxyscrapeSDK

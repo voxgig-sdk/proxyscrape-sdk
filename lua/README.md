@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local proxy_list, err = client:ProxyList():load()
+    local proxy_list, err = client:ProxyList():list()
     if err then error(err) end
-    -- proxy_list is the loaded record
+    -- proxy_list is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.

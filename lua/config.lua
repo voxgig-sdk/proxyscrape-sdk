@@ -133,6 +133,7 @@ local function make_config()
                     },
                   },
                 },
+                ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/free-proxy-list/get",
                 ["parts"] = {
@@ -151,7 +152,7 @@ local function make_config()
                 },
                 ["transform"] = {
                   ["req"] = "`reqdata`",
-                  ["res"] = "`body`",
+                  ["res"] = "`body.proxies`",
                 },
                 ["index$"] = 0,
               },

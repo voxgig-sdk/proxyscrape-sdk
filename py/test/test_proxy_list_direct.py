@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from proxyscrape_sdk.utility.voxgig_struct import voxgig_struct as vs
 from proxyscrape_sdk import ProxyscrapeSDK
-from core import helpers
+from proxyscrape_sdk.core import helpers
 from test import runner
 
 

@@ -35,7 +35,9 @@ const client = new ProxyscrapeSDK()
 
 ### 2. List proxylist records
 
-`list()` resolves to an array of ProxyList objects — iterate it directly:
+`list()` resolves to an array of ProxyList ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const proxylists = await client.ProxyList().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = ProxyscrapeSDK.test()
 
 const proxylist = await client.ProxyList().list()
-// proxylist is a bare entity populated with mock response data
+// proxylist is the entity, populated with mock response data
+// — call proxylist.data() for the record itself
 console.log(proxylist)
 ```
 

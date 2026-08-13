@@ -139,6 +139,7 @@ class ProxyscrapeConfig
                       ],
                     ],
                   ],
+                  'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/free-proxy-list/get',
                   'parts' => [
@@ -157,7 +158,7 @@ class ProxyscrapeConfig
                   ],
                   'transform' => [
                     'req' => '`reqdata`',
-                    'res' => '`body`',
+                    'res' => '`body.proxies`',
                   ],
                   'index$' => 0,
                 ],

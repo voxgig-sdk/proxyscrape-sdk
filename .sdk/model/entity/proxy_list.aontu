@@ -113,7 +113,7 @@ main: kit: entity: proxy_list: {
           }
           transform: {
             req: "`reqdata`"
-            res: "`body`"
+            res: "`body.proxies`"
           }
         }
       ]
