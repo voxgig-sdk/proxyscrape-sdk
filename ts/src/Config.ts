@@ -36,7 +36,7 @@ class Config {
 
 
   options = {
-    base: 'https://api.proxyscrape.com/v3',
+    base: "https://api.proxyscrape.com/v3",
 
     headers: {
       "content-type": "application/json"
@@ -55,46 +55,28 @@ class Config {
     "proxy_list": {
       "fields": [
         {
-          "active": true,
           "name": "anonymity",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 0
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "country",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 1
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "ip",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 2
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "port",
-          "req": false,
-          "type": "`$INTEGER`",
-          "index$": 3
+          "type": "`$INTEGER`"
         },
         {
-          "active": true,
           "name": "protocol",
-          "req": false,
-          "type": "`$STRING`",
-          "index$": 4
+          "type": "`$STRING`"
         },
         {
-          "active": true,
           "name": "timeout",
-          "req": false,
-          "type": "`$INTEGER`",
-          "index$": 5
+          "type": "`$INTEGER`"
         }
       ],
       "name": "proxy_list",
@@ -104,47 +86,37 @@ class Config {
           "name": "list",
           "points": [
             {
-              "active": true,
               "args": {
                 "query": [
                   {
-                    "active": true,
                     "example": "elite,anonymous",
                     "kind": "query",
                     "name": "anonymity",
                     "orig": "anonymity",
-                    "reqd": false,
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "us",
                     "kind": "query",
                     "name": "country",
                     "orig": "country",
-                    "reqd": false,
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "json",
                     "kind": "query",
                     "name": "format",
                     "orig": "format",
-                    "reqd": false,
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "socks5",
                     "kind": "query",
                     "name": "protocol",
                     "orig": "protocol",
-                    "reqd": false,
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": "displayproxies",
                     "kind": "query",
                     "name": "request",
@@ -153,12 +125,10 @@ class Config {
                     "type": "`$STRING`"
                   },
                   {
-                    "active": true,
                     "example": 6000,
                     "kind": "query",
                     "name": "timeout",
                     "orig": "timeout",
-                    "reqd": false,
                     "type": "`$INTEGER`"
                   }
                 ]
@@ -183,11 +153,9 @@ class Config {
               "transform": {
                 "req": "`reqdata`",
                 "res": "`body.proxies`"
-              },
-              "index$": 0
+              }
             }
-          ],
-          "key$": "list"
+          ]
         }
       },
       "relations": {

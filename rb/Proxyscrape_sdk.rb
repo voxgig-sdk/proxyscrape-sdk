@@ -28,7 +28,7 @@ class ProxyscrapeSDK
     utility = ProxyscrapeUtility.new
     @_utility = utility
 
-    config = ProxyscrapeConfig.make_config
+    config = ProxyscrapeConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

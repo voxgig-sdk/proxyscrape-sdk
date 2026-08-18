@@ -40,7 +40,7 @@ class ProxyscrapeSDK
         $utility = new ProxyscrapeUtility();
         $this->_utility = $utility;
 
-        $config = ProxyscrapeConfig::make_config();
+        $config = ProxyscrapeConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

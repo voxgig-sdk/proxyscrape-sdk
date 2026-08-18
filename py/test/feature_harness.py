@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from proxyscrape_sdk.config import make_config
+from proxyscrape_sdk.config import shared_config
 from proxyscrape_sdk.features import _make_feature
 from proxyscrape_sdk.core.control import ProxyscrapeControl
 from proxyscrape_sdk.core.error import ProxyscrapeError
@@ -24,7 +24,7 @@ from proxyscrape_sdk.core.spec import ProxyscrapeSpec
 
 # True when this SDK was generated with the named feature.
 def has_feature(name):
-    feature = make_config().get("feature")
+    feature = shared_config().get("feature")
     return isinstance(feature, dict) and feature.get(name) is not None
 
 
