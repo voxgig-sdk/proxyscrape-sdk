@@ -19,6 +19,9 @@ module ProxyscrapeConfig
     {
       "main" => {
         "name" => "Proxyscrape",
+        "slug" => "proxyscrape",
+        "version" => "0.0.1",
+        "target" => "rb",
       },
       "feature" => {
         "test" => {
@@ -41,26 +44,32 @@ module ProxyscrapeConfig
           "fields" => [
             {
               "name" => "anonymity",
+              "short" => "Anonymity level of the proxy",
               "type" => "`$STRING`",
             },
             {
               "name" => "country",
+              "short" => "Country code of the proxy location",
               "type" => "`$STRING`",
             },
             {
               "name" => "ip",
+              "short" => "IP address of the proxy server",
               "type" => "`$STRING`",
             },
             {
               "name" => "port",
+              "short" => "Port number of the proxy server",
               "type" => "`$INTEGER`",
             },
             {
               "name" => "protocol",
+              "short" => "Protocol type of the proxy",
               "type" => "`$STRING`",
             },
             {
               "name" => "timeout",
+              "short" => "Timeout value in milliseconds",
               "type" => "`$INTEGER`",
             },
           ],

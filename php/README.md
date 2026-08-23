@@ -247,12 +247,12 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `anonymity` |  |
-| `country` |  |
-| `ip` |  |
-| `port` |  |
-| `protocol` |  |
-| `timeout` |  |
+| `anonymity` | Anonymity level of the proxy |
+| `country` | Country code of the proxy location |
+| `ip` | IP address of the proxy server |
+| `port` | Port number of the proxy server |
+| `protocol` | Protocol type of the proxy |
+| `timeout` | Timeout value in milliseconds |
 
 Operations: List.
 
@@ -277,12 +277,12 @@ Create an instance: `$proxy_list = $client->ProxyList();`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `string` |  |
-| `country` | `string` |  |
-| `ip` | `string` |  |
-| `port` | `int` |  |
-| `protocol` | `string` |  |
-| `timeout` | `int` |  |
+| `anonymity` | `string` | Anonymity level of the proxy |
+| `country` | `string` | Country code of the proxy location |
+| `ip` | `string` | IP address of the proxy server |
+| `port` | `int` | Port number of the proxy server |
+| `protocol` | `string` | Protocol type of the proxy |
+| `timeout` | `int` | Timeout value in milliseconds |
 
 #### Example: List
 

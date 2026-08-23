@@ -90,12 +90,12 @@ local proxy_list = client:ProxyList(nil)
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `anonymity` | `string` | No |  |
-| `country` | `string` | No |  |
-| `ip` | `string` | No |  |
-| `port` | `number` | No |  |
-| `protocol` | `string` | No |  |
-| `timeout` | `number` | No |  |
+| `anonymity` | `string` | No | Anonymity level of the proxy |
+| `country` | `string` | No | Country code of the proxy location |
+| `ip` | `string` | No | IP address of the proxy server |
+| `port` | `number` | No | Port number of the proxy server |
+| `protocol` | `string` | No | Protocol type of the proxy |
+| `timeout` | `number` | No | Timeout value in milliseconds |
 
 ### Operations
 

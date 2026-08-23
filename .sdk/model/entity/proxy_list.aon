@@ -8,31 +8,37 @@ main: kit: entity: proxy_list: {
     {
       name: "anonymity"
       req: false
+      short: "Anonymity level of the proxy"
       type: "`$STRING`"
     }
     {
       name: "country"
       req: false
+      short: "Country code of the proxy location"
       type: "`$STRING`"
     }
     {
       name: "ip"
       req: false
+      short: "IP address of the proxy server"
       type: "`$STRING`"
     }
     {
       name: "port"
       req: false
+      short: "Port number of the proxy server"
       type: "`$INTEGER`"
     }
     {
       name: "protocol"
       req: false
+      short: "Protocol type of the proxy"
       type: "`$STRING`"
     }
     {
       name: "timeout"
       req: false
+      short: "Timeout value in milliseconds"
       type: "`$INTEGER`"
     }
   ]

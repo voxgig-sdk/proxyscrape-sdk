@@ -231,12 +231,12 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `anonymity` |  |
-| `country` |  |
-| `ip` |  |
-| `port` |  |
-| `protocol` |  |
-| `timeout` |  |
+| `anonymity` | Anonymity level of the proxy |
+| `country` | Country code of the proxy location |
+| `ip` | IP address of the proxy server |
+| `port` | Port number of the proxy server |
+| `protocol` | Protocol type of the proxy |
+| `timeout` | Timeout value in milliseconds |
 
 Operations: List.
 
@@ -261,12 +261,12 @@ Create an instance: `local proxy_list = client:ProxyList(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `string` |  |
-| `country` | `string` |  |
-| `ip` | `string` |  |
-| `port` | `number` |  |
-| `protocol` | `string` |  |
-| `timeout` | `number` |  |
+| `anonymity` | `string` | Anonymity level of the proxy |
+| `country` | `string` | Country code of the proxy location |
+| `ip` | `string` | IP address of the proxy server |
+| `port` | `number` | Port number of the proxy server |
+| `protocol` | `string` | Protocol type of the proxy |
+| `timeout` | `number` | Timeout value in milliseconds |
 
 #### Example: List
 

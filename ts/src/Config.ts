@@ -19,9 +19,20 @@ class Config {
     return fi
   }
 
+  // False for a feature added at runtime via options.extend (station's
+  // adopt path) - the constructor uses this to skip makeFeature for names
+  // no generated class backs.
+  hasFeature(this: any, fn: string) {
+    return null != FEATURE_CLASS[fn]
+  }
+
 
   main = {
     name: 'Proxyscrape',
+        slug: "proxyscrape",
+    version: "0.0.1",
+    target: "ts",
+
   }
 
 
@@ -56,26 +67,32 @@ class Config {
       "fields": [
         {
           "name": "anonymity",
+          "short": "Anonymity level of the proxy",
           "type": "`$STRING`"
         },
         {
           "name": "country",
+          "short": "Country code of the proxy location",
           "type": "`$STRING`"
         },
         {
           "name": "ip",
+          "short": "IP address of the proxy server",
           "type": "`$STRING`"
         },
         {
           "name": "port",
+          "short": "Port number of the proxy server",
           "type": "`$INTEGER`"
         },
         {
           "name": "protocol",
+          "short": "Protocol type of the proxy",
           "type": "`$STRING`"
         },
         {
           "name": "timeout",
+          "short": "Timeout value in milliseconds",
           "type": "`$INTEGER`"
         }
       ],

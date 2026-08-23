@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "Proxyscrape",
+			"slug": "proxyscrape",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -33,26 +36,32 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "anonymity",
+						"short": "Anonymity level of the proxy",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "country",
+						"short": "Country code of the proxy location",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "ip",
+						"short": "IP address of the proxy server",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "port",
+						"short": "Port number of the proxy server",
 						"type": "`$INTEGER`",
 					},
 					map[string]any{
 						"name": "protocol",
+						"short": "Protocol type of the proxy",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "timeout",
+						"short": "Timeout value in milliseconds",
 						"type": "`$INTEGER`",
 					},
 				},

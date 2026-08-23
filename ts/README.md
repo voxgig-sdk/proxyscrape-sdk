@@ -9,7 +9,7 @@ The API is exposed as capitalised, semantic **Entities** — e.g.
 instead of raw URL paths and query parameters. This keeps the surface
 predictable and low-friction for both humans and AI agents.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go`, `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb` — see
 > the [top-level README](../README.md).
 
 
@@ -287,12 +287,12 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `anonymity` |  |
-| `country` |  |
-| `ip` |  |
-| `port` |  |
-| `protocol` |  |
-| `timeout` |  |
+| `anonymity` | Anonymity level of the proxy |
+| `country` | Country code of the proxy location |
+| `ip` | IP address of the proxy server |
+| `port` | Port number of the proxy server |
+| `protocol` | Protocol type of the proxy |
+| `timeout` | Timeout value in milliseconds |
 
 Operations: list.
 
@@ -317,12 +317,12 @@ Create an instance: `const proxy_list = client.ProxyList()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `string` |  |
-| `country` | `string` |  |
-| `ip` | `string` |  |
-| `port` | `number` |  |
-| `protocol` | `string` |  |
-| `timeout` | `number` |  |
+| `anonymity` | `string` | Anonymity level of the proxy |
+| `country` | `string` | Country code of the proxy location |
+| `ip` | `string` | IP address of the proxy server |
+| `port` | `number` | Port number of the proxy server |
+| `protocol` | `string` | Protocol type of the proxy |
+| `timeout` | `number` | Timeout value in milliseconds |
 
 #### Example: List
 

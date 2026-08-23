@@ -93,12 +93,12 @@ proxy_list = client.ProxyList
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `anonymity` | `String` | No |  |
-| `country` | `String` | No |  |
-| `ip` | `String` | No |  |
-| `port` | `Integer` | No |  |
-| `protocol` | `String` | No |  |
-| `timeout` | `Integer` | No |  |
+| `anonymity` | `String` | No | Anonymity level of the proxy |
+| `country` | `String` | No | Country code of the proxy location |
+| `ip` | `String` | No | IP address of the proxy server |
+| `port` | `Integer` | No | Port number of the proxy server |
+| `protocol` | `String` | No | Protocol type of the proxy |
+| `timeout` | `Integer` | No | Timeout value in milliseconds |
 
 ### Operations
 

@@ -36,36 +36,42 @@
               "active": true,
               "name": "anonymity",
               "req": false,
+              "short": "Anonymity level of the proxy",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "country",
               "req": false,
+              "short": "Country code of the proxy location",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "ip",
               "req": false,
+              "short": "IP address of the proxy server",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "port",
               "req": false,
+              "short": "Port number of the proxy server",
               "type": "`$INTEGER`"
             },
             {
               "active": true,
               "name": "protocol",
               "req": false,
+              "short": "Protocol type of the proxy",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "timeout",
               "req": false,
+              "short": "Timeout value in milliseconds",
               "type": "`$INTEGER`"
             }
           ],

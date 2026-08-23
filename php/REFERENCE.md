@@ -92,12 +92,12 @@ $proxy_list = $client->ProxyList();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `anonymity` | `string` | No |  |
-| `country` | `string` | No |  |
-| `ip` | `string` | No |  |
-| `port` | `int` | No |  |
-| `protocol` | `string` | No |  |
-| `timeout` | `int` | No |  |
+| `anonymity` | `string` | No | Anonymity level of the proxy |
+| `country` | `string` | No | Country code of the proxy location |
+| `ip` | `string` | No | IP address of the proxy server |
+| `port` | `int` | No | Port number of the proxy server |
+| `protocol` | `string` | No | Protocol type of the proxy |
+| `timeout` | `int` | No | Timeout value in milliseconds |
 
 ### Operations
 

@@ -243,12 +243,12 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `anonymity` |  |
-| `country` |  |
-| `ip` |  |
-| `port` |  |
-| `protocol` |  |
-| `timeout` |  |
+| `anonymity` | Anonymity level of the proxy |
+| `country` | Country code of the proxy location |
+| `ip` | IP address of the proxy server |
+| `port` | Port number of the proxy server |
+| `protocol` | Protocol type of the proxy |
+| `timeout` | Timeout value in milliseconds |
 
 Operations: List.
 
@@ -273,12 +273,12 @@ Create an instance: `proxy_list = client.ProxyList()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `str` |  |
-| `country` | `str` |  |
-| `ip` | `str` |  |
-| `port` | `int` |  |
-| `protocol` | `str` |  |
-| `timeout` | `int` |  |
+| `anonymity` | `str` | Anonymity level of the proxy |
+| `country` | `str` | Country code of the proxy location |
+| `ip` | `str` | IP address of the proxy server |
+| `port` | `int` | Port number of the proxy server |
+| `protocol` | `str` | Protocol type of the proxy |
+| `timeout` | `int` | Timeout value in milliseconds |
 
 #### Example: List
 

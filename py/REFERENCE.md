@@ -87,12 +87,12 @@ proxy_list = client.ProxyList()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `anonymity` | `str` | No |  |
-| `country` | `str` | No |  |
-| `ip` | `str` | No |  |
-| `port` | `int` | No |  |
-| `protocol` | `str` | No |  |
-| `timeout` | `int` | No |  |
+| `anonymity` | `str` | No | Anonymity level of the proxy |
+| `country` | `str` | No | Country code of the proxy location |
+| `ip` | `str` | No | IP address of the proxy server |
+| `port` | `int` | No | Port number of the proxy server |
+| `protocol` | `str` | No | Protocol type of the proxy |
+| `timeout` | `int` | No | Timeout value in milliseconds |
 
 ### Operations
 

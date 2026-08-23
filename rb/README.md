@@ -237,12 +237,12 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `anonymity` |  |
-| `country` |  |
-| `ip` |  |
-| `port` |  |
-| `protocol` |  |
-| `timeout` |  |
+| `anonymity` | Anonymity level of the proxy |
+| `country` | Country code of the proxy location |
+| `ip` | IP address of the proxy server |
+| `port` | Port number of the proxy server |
+| `protocol` | Protocol type of the proxy |
+| `timeout` | Timeout value in milliseconds |
 
 Operations: List.
 
@@ -267,12 +267,12 @@ Create an instance: `proxy_list = client.ProxyList`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `String` |  |
-| `country` | `String` |  |
-| `ip` | `String` |  |
-| `port` | `Integer` |  |
-| `protocol` | `String` |  |
-| `timeout` | `Integer` |  |
+| `anonymity` | `String` | Anonymity level of the proxy |
+| `country` | `String` | Country code of the proxy location |
+| `ip` | `String` | IP address of the proxy server |
+| `port` | `Integer` | Port number of the proxy server |
+| `protocol` | `String` | Protocol type of the proxy |
+| `timeout` | `Integer` | Timeout value in milliseconds |
 
 #### Example: List
 

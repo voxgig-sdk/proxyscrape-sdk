@@ -6,7 +6,7 @@ The Golang SDK for the Proxyscrape API — an entity-oriented client using stand
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.ProxyList(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,12 +260,12 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"anonymity"` |  |
-| `"country"` |  |
-| `"ip"` |  |
-| `"port"` |  |
-| `"protocol"` |  |
-| `"timeout"` |  |
+| `"anonymity"` | Anonymity level of the proxy |
+| `"country"` | Country code of the proxy location |
+| `"ip"` | IP address of the proxy server |
+| `"port"` | Port number of the proxy server |
+| `"protocol"` | Protocol type of the proxy |
+| `"timeout"` | Timeout value in milliseconds |
 
 Operations: List.
 
@@ -290,12 +290,12 @@ Create an instance: `proxyList := client.ProxyList(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `anonymity` | `string` |  |
-| `country` | `string` |  |
-| `ip` | `string` |  |
-| `port` | `int` |  |
-| `protocol` | `string` |  |
-| `timeout` | `int` |  |
+| `anonymity` | `string` | Anonymity level of the proxy |
+| `country` | `string` | Country code of the proxy location |
+| `ip` | `string` | IP address of the proxy server |
+| `port` | `int` | Port number of the proxy server |
+| `protocol` | `string` | Protocol type of the proxy |
+| `timeout` | `int` | Timeout value in milliseconds |
 
 #### Example: List
 
