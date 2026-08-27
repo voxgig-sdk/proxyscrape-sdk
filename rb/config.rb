@@ -28,6 +28,7 @@ module ProxyscrapeConfig
           "options" => {
             "active" => false,
           },
+          "transport" => "base",
         },
       },
       "options" => {
