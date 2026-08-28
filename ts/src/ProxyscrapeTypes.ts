@@ -17,9 +17,9 @@ export interface ProxyList {
 export interface ProxyListListMatch {
   anonymity?: string
   country?: string
-  ip?: string
-  port?: number
+  format?: string
   protocol?: string
+  request: string
   timeout?: number
 }
 

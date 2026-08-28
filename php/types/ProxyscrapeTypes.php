@@ -28,9 +28,9 @@ class ProxyListListMatch
 {
     public ?string $anonymity = null;
     public ?string $country = null;
-    public ?string $ip = null;
-    public ?int $port = null;
+    public ?string $format = null;
     public ?string $protocol = null;
+    public string $request;
     public ?int $timeout = null;
 }
 

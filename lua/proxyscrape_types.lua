@@ -17,9 +17,9 @@
 ---@class ProxyListListMatch
 ---@field anonymity? string
 ---@field country? string
----@field ip? string
----@field port? number
+---@field format? string
 ---@field protocol? string
+---@field request string
 ---@field timeout? number
 
 local M = {}

@@ -26,9 +26,9 @@ type ProxyList struct {
 type ProxyListListMatch struct {
 	Anonymity *string `json:"anonymity,omitempty"`
 	Country *string `json:"country,omitempty"`
-	Ip *string `json:"ip,omitempty"`
-	Port *int `json:"port,omitempty"`
+	Format *string `json:"format,omitempty"`
 	Protocol *string `json:"protocol,omitempty"`
+	Request string `json:"request"`
 	Timeout *int `json:"timeout,omitempty"`
 }
 

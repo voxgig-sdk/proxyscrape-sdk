@@ -45,23 +45,23 @@ ProxyList = Struct.new(
 # @!attribute [rw] country
 #   @return [String, nil]
 #
-# @!attribute [rw] ip
+# @!attribute [rw] format
 #   @return [String, nil]
-#
-# @!attribute [rw] port
-#   @return [Integer, nil]
 #
 # @!attribute [rw] protocol
 #   @return [String, nil]
+#
+# @!attribute [rw] request
+#   @return [String]
 #
 # @!attribute [rw] timeout
 #   @return [Integer, nil]
 ProxyListListMatch = Struct.new(
   :anonymity,
   :country,
-  :ip,
-  :port,
+  :format,
   :protocol,
+  :request,
   :timeout,
   keyword_init: true
 )

@@ -25,10 +25,13 @@ class ProxyList(TypedDict, total=False):
     timeout: int
 
 
-class ProxyListListMatch(TypedDict, total=False):
+class ProxyListListMatchRequired(TypedDict):
+    request: str
+
+
+class ProxyListListMatch(ProxyListListMatchRequired, total=False):
     anonymity: str
     country: str
-    ip: str
-    port: int
+    format: str
     protocol: str
     timeout: int
