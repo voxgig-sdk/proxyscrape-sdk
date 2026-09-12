@@ -119,9 +119,13 @@ local function make_config()
                 ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/free-proxy-list/get",
-                ["parts"] = {
-                  "free-proxy-list",
-                  "get",
+                ["segments"] = {
+                  {
+                    ["lit"] = "free-proxy-list",
+                  },
+                  {
+                    ["lit"] = "get",
+                  },
                 },
                 ["select"] = {
                   ["exist"] = {
@@ -136,6 +140,10 @@ local function make_config()
                 ["transform"] = {
                   ["req"] = "`reqdata`",
                   ["res"] = "`body.proxies`",
+                },
+                ["parts"] = {
+                  "free-proxy-list",
+                  "get",
                 },
               },
             },

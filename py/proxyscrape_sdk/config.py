@@ -1,6 +1,14 @@
 # Proxyscrape SDK configuration
 
 
+# The sekreto plugin DEFINITIONS the model selected per feature, imported
+# above by name from the modules the catalogue's active `plugin.def`
+# entries declare. Handed to each feature (secrets builds its Sekreto
+# with them): a provider kind not listed here is unknown to that SDK.
+FEATURE_PLUGINS = {
+}
+
+
 _shared_config = None
 
 
@@ -140,9 +148,13 @@ def make_config():
                 "kind": "http",
                 "method": "GET",
                 "orig": "/free-proxy-list/get",
-                "parts": [
-                  "free-proxy-list",
-                  "get",
+                "segments": [
+                  {
+                    "lit": "free-proxy-list",
+                  },
+                  {
+                    "lit": "get",
+                  },
                 ],
                 "select": {
                   "exist": [
@@ -158,6 +170,10 @@ def make_config():
                   "req": "`reqdata`",
                   "res": "`body.proxies`",
                 },
+                "parts": [
+                  "free-proxy-list",
+                  "get",
+                ],
               },
             ],
           },

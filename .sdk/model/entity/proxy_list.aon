@@ -103,9 +103,13 @@ main: kit: entity: proxy_list: {
           }
           method: "GET"
           orig: "/free-proxy-list/get"
-          parts: [
-            "free-proxy-list"
-            "get"
+          segments: [
+            {
+              lit: "free-proxy-list"
+            }
+            {
+              lit: "get"
+            }
           ]
           select: {
             exist: [

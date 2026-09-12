@@ -131,9 +131,13 @@ module ProxyscrapeConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/free-proxy-list/get",
-                  "parts" => [
-                    "free-proxy-list",
-                    "get",
+                  "segments" => [
+                    {
+                      "lit" => "free-proxy-list",
+                    },
+                    {
+                      "lit" => "get",
+                    },
                   ],
                   "select" => {
                     "exist" => [
@@ -149,6 +153,10 @@ module ProxyscrapeConfig
                     "req" => "`reqdata`",
                     "res" => "`body.proxies`",
                   },
+                  "parts" => [
+                    "free-proxy-list",
+                    "get",
+                  ],
                 },
               ],
             },
