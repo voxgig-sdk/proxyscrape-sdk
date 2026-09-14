@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape'
+import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape-sdk'
 
 const client = new ProxyscrapeSDK()
 ```
@@ -413,7 +413,7 @@ proxyscrape/
 Import the SDK from the package root:
 
 ```ts
-import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape'
+import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape-sdk'
 ```
 
 ### Entity state

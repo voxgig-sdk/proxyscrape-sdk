@@ -105,7 +105,7 @@ local results, err = client:ProxyList():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
+| TypeScript | `@voxgig-sdk/proxyscrape-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
 | Python | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
 | PHP | `voxgig-sdk/proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/proxyscrape-sdk/go` | `go get github.com/voxgig-sdk/proxyscrape-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:ProxyList():list()
 ### TypeScript
 
 ```ts
-import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape'
+import { ProxyscrapeSDK } from '@voxgig-sdk/proxyscrape-sdk'
 
 const client = new ProxyscrapeSDK()
 
