@@ -4,7 +4,10 @@ declare(strict_types=1);
 // Proxyscrape SDK feature factory
 
 require_once __DIR__ . '/feature/BaseFeature.php';
+require_once __DIR__ . '/feature/RatelimitFeature.php';
+require_once __DIR__ . '/feature/RetryFeature.php';
 require_once __DIR__ . '/feature/TestFeature.php';
+require_once __DIR__ . '/feature/TimeoutFeature.php';
 
 
 class ProxyscrapeFeatures
@@ -14,8 +17,14 @@ class ProxyscrapeFeatures
         switch ($name) {
             case "base":
                 return new ProxyscrapeBaseFeature();
+            case "ratelimit":
+                return new ProxyscrapeRatelimitFeature();
+            case "retry":
+                return new ProxyscrapeRetryFeature();
             case "test":
                 return new ProxyscrapeTestFeature();
+            case "timeout":
+                return new ProxyscrapeTimeoutFeature();
             default:
                 return new ProxyscrapeBaseFeature();
         }
@@ -31,7 +40,10 @@ class ProxyscrapeFeatures
     {
         switch ($name) {
             case "base":
+            case "ratelimit":
+            case "retry":
             case "test":
+            case "timeout":
                 return true;
             default:
                 return false;

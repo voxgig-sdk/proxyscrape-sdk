@@ -1,12 +1,18 @@
 # Proxyscrape SDK feature factory
 
 from proxyscrape_sdk.feature.base_feature import ProxyscrapeBaseFeature
+from proxyscrape_sdk.feature.ratelimit_feature import ProxyscrapeRatelimitFeature
+from proxyscrape_sdk.feature.retry_feature import ProxyscrapeRetryFeature
 from proxyscrape_sdk.feature.test_feature import ProxyscrapeTestFeature
+from proxyscrape_sdk.feature.timeout_feature import ProxyscrapeTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: ProxyscrapeBaseFeature(),
+    "ratelimit": lambda: ProxyscrapeRatelimitFeature(),
+    "retry": lambda: ProxyscrapeRetryFeature(),
     "test": lambda: ProxyscrapeTestFeature(),
+    "timeout": lambda: ProxyscrapeTimeoutFeature(),
 }
 
 
