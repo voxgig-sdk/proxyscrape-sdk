@@ -127,9 +127,9 @@ class Config {
 
     entity: {
       
-      proxy_list: {
-      },
-
+        proxy_list: {
+        },
+  
     }
   }
 

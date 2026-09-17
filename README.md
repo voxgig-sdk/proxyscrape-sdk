@@ -105,12 +105,12 @@ local results, err = client:ProxyList():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/proxyscrape-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
-| Python | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
-| PHP | `voxgig-sdk/proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
+| TypeScript | `@voxgig-sdk/proxyscrape-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/tags) |
+| Python | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/tags) |
+| PHP | `voxgig-sdk/proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/proxyscrape-sdk/go` | `go get github.com/voxgig-sdk/proxyscrape-sdk/go@latest` |
-| Ruby | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
-| Lua | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/releases) |
+| Ruby | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/tags) |
+| Lua | `voxgig-sdk-proxyscrape` | publish pending — [install from git tag](https://github.com/voxgig-sdk/proxyscrape-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/proxyscrape-sdk/go-cli` | `go install github.com/voxgig-sdk/proxyscrape-sdk/go-cli/cmd/proxyscrape@latest` |
 | Go MCP server | `github.com/voxgig-sdk/proxyscrape-sdk/go-mcp` | `go get github.com/voxgig-sdk/proxyscrape-sdk/go-mcp@latest` |
 
